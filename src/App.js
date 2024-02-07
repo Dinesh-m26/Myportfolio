@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Aboutme from './Components/Aboutme';
+import ContactForm from './Components/Contact';
+import { Education } from './Components/Education';
+import { Header } from './Components/Header';
+import { Home } from './Components/Home';
+import { Project } from './Components/Project';
+import { Footer } from './Components/Footer';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className="bg-[#23283E] text-[#CDCDFF] " data-aos="fade-down" data-aos-duration="1000"  >
+      <Header />
+      <Home />
+      <Aboutme />
+      <Education />
+      <Project />
+      <ContactForm />
+      <Footer />
     </div>
+
   );
 }
 
