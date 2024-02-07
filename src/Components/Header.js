@@ -15,7 +15,7 @@ export const Header = () => {
           D<span className="text-white">.</span>
         </h1>
         <div className='flex mr-auto space-x-4' data-aos="fade-right" data-aos-duration="2000">
-          <a href='mailto:your.dineshubli@example.com' className='flex items-center transform transition-transform hover:scale-110'>
+          <a href='mailto:dineshubli@gmail.com' className='flex items-center transform transition-transform hover:scale-110'>
             <FaEnvelope className='text-[#90A0D9]' />
           </a>
           <a href='tel:+919345352716' className='flex items-center transform transition-transform hover:scale-110'>
