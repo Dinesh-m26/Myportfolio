@@ -49,7 +49,7 @@ export const Header = () => {
           </ul>
         </div> {toggleMenu &&
 
-          <div className='fixed right-3 top-16  w-1/2 bg-[#23283E] rounded'>
+          <div className='absolute right-3 top-16  w-1/2 bg-[#23283E] rounded'>
             <ul className="text-center p-0 m-0 space-y-2">
               <li className="hover:text-[#90A0D9]">
                 <a href='/' onClick={handletoggle}>Home</a>
