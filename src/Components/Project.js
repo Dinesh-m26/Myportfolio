@@ -16,7 +16,7 @@ export const Project = () => {
           </div>
         </div>
         {/* Project 2 */}
-        <div className='bg-gray-200 p-4 rounded-md' data-aos="zoom-in-up" >
+        <div className='bg-gray-200 p-4 rounded-md py-auto' data-aos="zoom-in-up" >
           <h2 className='text-[#23283E] text-lg font-semibold mb-2'>E-commerce-website</h2>
           <p className='text-[#476fff] font-medium'>Using Html ,css ,Bootstrap</p>
           <div className='flex space-x-2 pt-2'>
@@ -25,7 +25,7 @@ export const Project = () => {
           </div>
         </div>
         {/* Project 3 */}
-        <div className='bg-gray-200 p-4 rounded-md' data-aos="zoom-in-up" >
+        <div className='bg-gray-200 p-4 rounded-md py-auto' data-aos="zoom-in-up" >
           <h2 className='text-[#23283E] text-lg font-semibold mb-2'>ToDo-List</h2>
           <p className='text-[#476fff] font-medium'>Using Html ,css, Bootstrap, JavaScript</p>
           <div className='flex space-x-2 pt-2'>
@@ -35,7 +35,7 @@ export const Project = () => {
         </div>
 
         {/* Project 4 */}
-        <div className='bg-gray-200 p-4 rounded-md' data-aos="zoom-in-up" >
+        <div className='bg-gray-200 p-4 rounded-md py-auto' data-aos="zoom-in-up" >
           <h2 className='text-[#23283E] text-lg font-semibold mb-2'>CRUD</h2>
           <p className='text-[#476fff] font-medium'>Using Reactjs</p>
           <div className='flex space-x-2 pt-2'>
