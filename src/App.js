@@ -1,7 +1,7 @@
 import './App.css';
 import Aboutme from './Components/Aboutme';
 import ContactForm from './Components/Contact';
-import { Education } from './Components/Education';
+import {Education} from './Components/Education';
 import { Header } from './Components/Header';
 import { Home } from './Components/Home';
 import { Project } from './Components/Project';
@@ -13,11 +13,11 @@ function App() {
 
   return (
 
-    <div className="bg-[#23283E] text-[#CDCDFF] " data-aos="fade-down" data-aos-duration="1000"  >
+    <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black text-[#CDCDFF] " data-aos="fade-down" data-aos-duration="1000"  >
       <Header />
       <Home />
       <Aboutme />
-      <Skills/>
+      <Skills />
       <Education />
       <Project />
       <ContactForm />

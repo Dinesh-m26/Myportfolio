@@ -9,8 +9,8 @@ export const Header = () => {
   }
 
   return (
-    <div>
-      <div className="flex justify-between py-7">
+    <div className=" text-white">
+      <div className="flex justify-between items-center py-7">
         <h1 className="text-4xl px-4 text-[#90A0D9]" data-aos="fade-right" data-aos-duration="2000">
           D<span className="text-white">.</span>
         </h1>
@@ -28,9 +28,10 @@ export const Header = () => {
             <FaGithub className='text-[#90A0D9]' />
           </a>
         </div>
-        <button className='md:hidden px-3' onClick={() => setTogglemenu(!toggleMenu)}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
-        </svg>
+        <button className='md:hidden px-3' onClick={() => setTogglemenu(!toggleMenu)}>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+          </svg>
         </button>
         <div className='hidden md:block'>
           <ul className="flex px-5 my-auto space-x-4">
@@ -47,9 +48,9 @@ export const Header = () => {
               <a href='#contact' >Contact</a>
             </li>
           </ul>
-        </div> {toggleMenu &&
-
-          <div className='absolute right-3 top-16  w-1/2 bg-[#23283E] rounded'>
+        </div> 
+        {toggleMenu && (
+          <div className='absolute right-3 top-16 w-1/2 bg-[#23283E] rounded'>
             <ul className="text-center p-0 m-0 space-y-2">
               <li className="hover:text-[#90A0D9]">
                 <a href='/' onClick={handletoggle}>Home</a>
@@ -64,9 +65,9 @@ export const Header = () => {
                 <a href='#contact' onClick={handletoggle}>Contact</a>
               </li>
             </ul>
-          </div>}
+          </div>
+        )}
       </div>
-
     </div>
   );
 };

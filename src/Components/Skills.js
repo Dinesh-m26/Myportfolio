@@ -1,22 +1,33 @@
 import React from 'react';
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaJs, FaReact, FaGitAlt, FaGithub } from 'react-icons/fa';
+import { SiTailwindcss, SiRedux, SiCanva } from 'react-icons/si';
+
+const skillData = [
+    { name: 'HTML', icon: <FaHtml5 className="text-4xl text-orange-600" /> },
+    { name: 'CSS', icon: <FaCss3Alt className="text-4xl text-blue-500" /> },
+    { name: 'TailwindCSS', icon: <SiTailwindcss className="text-4xl text-teal-400" /> },
+    { name: 'Bootstrap', icon: <FaBootstrap className="text-4xl text-purple-600" /> },
+    { name: 'JavaScript', icon: <FaJs className="text-4xl text-yellow-500" /> },
+    { name: 'ReactJS', icon: <FaReact className="text-4xl text-blue-400" /> },
+    { name: 'Redux', icon: <SiRedux className="text-4xl text-purple-500" /> },
+    { name: 'Git', icon: <FaGitAlt className="text-4xl text-orange-600" /> },
+    { name: 'GitHub', icon: <FaGithub className="text-4xl text-black" /> },
+    { name: 'Canva', icon: <SiCanva className="text-4xl text-blue-400" /> },
+];
 
 export const Skills = () => {
     return (
-        <div>
-            <h1 className='text-[#90A0D9] text-3xl lg:text-5xl font-bold text-center pb-4 '>SKILLS</h1>
-            <div className='flex flex-wrap gap-4 w-full lg:w-2/3 mx-auto px-4 md:py-5 '>
-                <h3 className='py-2  transform transition-transform hover:scale-110 ' ><span className="bg-[#334155] p-2 rounded px-2"
-                    >HTML</span></h3>
-                <h3 className='py-2  transform transition-transform hover:scale-110 '   ><span className="bg-[#334155] p-2 rounded px-2" >CSS</span></h3>
-                <h3 className='py-2  transform transition-transform hover:scale-110 '  ><span className="bg-[#334155] p-2 rounded px-2" >TAILWINDCSS</span></h3>
-                <h3 className='py-2  transform transition-transform hover:scale-110 '  ><span className="bg-[#334155] p-2 rounded px-2" >BOOTSTRAP</span></h3>
-                <h3 className='py-2  transform transition-transform hover:scale-110 '  ><span className="bg-[#334155] p-2 rounded px-2" >JAVASCRIPT</span></h3>
-                <h3 className='py-2  transform transition-transform hover:scale-110 '  ><span className="bg-[#334155] p-2 rounded px-2" >REACTJS</span></h3>
-                <h3 className='py-2  transform transition-transform hover:scale-110 ' ><span className="bg-[#334155] p-2 rounded px-2" >REDUX</span></h3>
-                <h3 className='py-2  transform transition-transform hover:scale-110 '  ><span className="bg-[#334155] p-2 rounded px-2" >GIT</span></h3>
-                <h3 className='py-2  transform transition-transform hover:scale-110 ' ><span className="bg-[#334155] p-2 rounded px-2" >GITHUB</span></h3>
-                <h3 className='py-2  transform transition-transform hover:scale-110 ' ><span className="bg-[#334155] p-2 rounded px-2" >CANVA</span></h3>
-
+        <div className="bg-gradient-to-r from-gray-700 via-gray-900 to-black py-10">
+            <h1 className='text-white text-3xl lg:text-5xl font-bold text-center pb-8'>SKILLS</h1>
+            <div className='flex flex-wrap gap-8 justify-center w-full lg:w-2/3 mx-auto px-4'>
+                {skillData.map((skill, index) => (
+                    <div key={index} className='flex flex-col items-center transform transition-transform hover:scale-110'>
+                        <div className="bg-[#1E293B] p-6 rounded-full shadow-lg">
+                            {skill.icon}
+                        </div>
+                        <h3 className='text-white mt-4'>{skill.name}</h3>
+                    </div>
+                ))}
             </div>
         </div>
     );
