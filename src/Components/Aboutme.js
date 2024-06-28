@@ -3,7 +3,7 @@ import logo from "./images/3.png";
 
 const Aboutme = () => {
   return (
-    <div id="aboutme" className="px-4 lg:px-0 py-10">
+    <div id="aboutme" className="px-4 lg:px-0 py-2 md:py-10">
       <h1 className='text-[#90A0D9] text-3xl lg:text-5xl font-bold text-center pb-4'>ABOUT ME</h1>
       <div className='w-full lg:w-2/3 mx-auto text-md'>
         <div className='flex flex-col lg:flex-row items-center'>
